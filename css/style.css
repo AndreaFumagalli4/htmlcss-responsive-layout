@@ -48,6 +48,19 @@ section#planning div.app-dev{
     margin-top: 1rem;
 }
 
+section#people div.testimonial{
+    background-color: #9792e4;
+    height: 100px;
+    margin: 1rem 0;
+}
+
+div.testimonial div.testimonial-image{
+    background-color: yellow;
+}
+
+div.testimonial div.testimonial-quote{
+    background-color: cyan;
+}
 
 
 
@@ -78,6 +91,18 @@ section#planning div.app-dev{
         background-color: cyan;
         width: calc((100% / 3) * 2 - 2rem);
         height: 200px;
+    }
+
+    .testimonial{
+        display: flex;
+    }
+
+    .testimonial-image{
+        width: 40%;
+    }
+
+    .testimonial-quote{
+        width: 60%;
     }
 }
 
