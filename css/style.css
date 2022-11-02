@@ -72,6 +72,16 @@ div.article{
     margin: 1rem;
 }
 
+section#about-us div.text{
+    background-color: yellow;
+    height: 100px;
+}
+
+section#about-us div.image-quote{
+    background-color: lime;
+    height: 100px;
+}
+
 
 
 /* 
@@ -120,6 +130,18 @@ div.article{
 
     .article{
         width: calc((100% / 2) - 2rem);
+    }
+
+    section#about-us div.container{
+        display: flex;
+    }
+
+    section#about-us div.text{
+        width: 70%;
+    }
+    
+    section#about-us div.image-quote{
+        width: 30%;
     }
 }
 
