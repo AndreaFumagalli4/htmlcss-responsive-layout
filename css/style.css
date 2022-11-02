@@ -20,6 +20,10 @@
     padding: 1rem;
 }
 
+.button{
+    border: none;
+}
+
 /* css header */
 
 header{
@@ -44,19 +48,61 @@ header div.flex>ul>li:first-child{
 li>button.get-started-button{
     font-size: 1rem;
     background-color: white;
-    border: none;
     border-radius: 1.5rem;
     padding: .75rem;
-
 }
 
 /* css main */
 
-
-.cards .card{
-    background-color: cyan;
-    height: 200px;
+div.cards div.card{
+    background-color: #b5ddff;
     margin: 1rem 0;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+div.card{
+    padding: 2rem 3rem 0;
+}
+
+div.content-card{
+    text-align: start;
+}
+
+div.card h1,
+div.card>i{
+    color: #0084fd;
+}
+
+div.card h1{
+    font-size: 2rem;
+}
+
+div.card p{
+    font-size: 1.15rem;
+    line-height: 2rem;
+}
+
+div.card h1,
+div.card p{
+    padding-bottom: 2rem;
+}
+
+div.content-card button.app-store-button{
+    color: white;
+    background-color: #0084fd;
+    padding: .75rem 4rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+div.image-card img{
+    width: 80%;
+}
+
+div.card>i{
+    padding-bottom: 2rem;
 }
 
 section#planning{
@@ -129,24 +175,21 @@ footer{
 /* TABLET */
 
 @media screen and (min-width: 768px){
-    .cards{
+    
+    div.cards{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 -.5rem;
     }
 
-    .cards .card{
-        background-color: cyan;
+    div.cards div.card{
         width: calc((100% / 3) - 1rem);
-        height: 200px;
         margin: .5rem;
     }
 
-    .cards .card:first-child{
-        background-color: cyan;
+    div.cards div.card:first-child{
         width: calc((100% / 3) * 2 - 1rem);
-        height: 200px;
     }
 
     .testimonial{
@@ -200,6 +243,11 @@ footer{
 
 @media screen and (min-width: 992px){
 
+    .container{
+        width: 65%;
+        margin: 0 auto;
+    }
+
     header div.flex>ul>li{
         display: inline-block;
     }
@@ -208,9 +256,9 @@ footer{
         display: none;
     }
 
-    .container{
-        width: 65%;
-        margin: 0 auto;
+    div.big-card{
+        display: flex;
+
     }
 
     .plans{
