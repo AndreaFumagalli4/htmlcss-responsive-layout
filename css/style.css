@@ -6,3 +6,40 @@
     box-sizing: border-box;
 }
 
+.flex{
+    display: flex;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+header{
+    background-color: #0084fd;
+    height: 80px;
+}
+
+header>div{
+    padding: 0 1rem;
+}
+
+div.container{
+    height: 100%;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+
+@media screen and (min-width: 768px){
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1160px){
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
