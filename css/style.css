@@ -12,21 +12,42 @@
 
 .flex-between{
     justify-content: space-between;
+    align-items: center;
 }
 
 .container{
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* css header */
 
 header{
     background-color: #0084fd;
+    color: white;
 }
 
-div.flex div{
-    vertical-align: middle;
+header div.flex>ul{
+    list-style-type: none;
+}
+
+header div.flex>ul>li{
+    display: none;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+header div.flex>ul>li:first-child{
+    display: inline-block;
+}
+
+li>button.get-started-button{
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 1.5rem;
+    padding: .75rem;
+
 }
 
 /* css main */
@@ -178,8 +199,17 @@ footer{
 /* DESKTOP */
 
 @media screen and (min-width: 992px){
+
+    header div.flex>ul>li{
+        display: inline-block;
+    }
+    
+    header div.flex>ul>li:first-child{
+        display: none;
+    }
+
     .container{
-        width: 70%;
+        width: 65%;
         margin: 0 auto;
     }
 
