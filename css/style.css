@@ -87,6 +87,13 @@ section#get-started{
     text-align: center;
 }
 
+/* css footer */
+
+footer{
+    background-color: #333333;
+    text-align: center;
+}
+
 
 /* 
     RESPONSIVE 
@@ -152,6 +159,11 @@ section#get-started{
         width: 70%;
         margin: 0 auto;
     }
+
+    footer div.footer-text{
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -179,5 +191,9 @@ section#get-started{
 
     section#get-started div.container-get-started{
         width: 50%;
+    }
+
+    footer div.footer-text{
+        width: 45%;
     }
 }
