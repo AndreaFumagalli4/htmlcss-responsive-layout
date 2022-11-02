@@ -62,7 +62,15 @@ div.testimonial div.testimonial-quote{
     background-color: cyan;
 }
 
+section#benefit{
+    background-color: #9792e4;
+}
 
+div.article{
+    background-color: white;
+    height: 200px;
+    margin: 1rem;
+}
 
 
 
@@ -104,6 +112,15 @@ div.testimonial div.testimonial-quote{
     .testimonial-quote{
         width: 60%;
     }
+
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article{
+        width: calc((100% / 2) - 2rem);
+    }
 }
 
 
@@ -123,5 +140,9 @@ div.testimonial div.testimonial-quote{
 
     section#planning div.app-dev{
         margin-left: 1rem;
+    }
+
+    .article{
+        width: calc((100% / 3) - 2rem);
     }
 }
