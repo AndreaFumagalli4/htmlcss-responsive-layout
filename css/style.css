@@ -82,6 +82,10 @@ section#about-us div.image-quote{
     height: 100px;
 }
 
+section#get-started{
+    background-color: #9792e4;
+    text-align: center;
+}
 
 
 /* 
@@ -143,6 +147,11 @@ section#about-us div.image-quote{
     section#about-us div.image-quote{
         width: 30%;
     }
+
+    section#get-started div.container-get-started{
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -166,5 +175,9 @@ section#about-us div.image-quote{
 
     .article{
         width: calc((100% / 3) - 2rem);
+    }
+
+    section#get-started div.container-get-started{
+        width: 50%;
     }
 }
