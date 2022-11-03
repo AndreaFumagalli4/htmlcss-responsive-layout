@@ -409,7 +409,7 @@ footer{
         align-items: center;
     }
 
-    figure.testimonial-image{
+    div.testiomonial figure.testimonial-image{
         width: 270px;
         height: 200px;
         margin: 2rem 1rem 1rem;
@@ -442,21 +442,16 @@ footer{
     }
 
     section#about-us div.text{
-        width: 70%;
+        width: 65%;
         padding:2rem;
     }
     
     section#about-us div.image-quote{
-        width: 30%;
-    }
-
-    div.p-relative>figure.testimonial-image{
-        width: 250px;
-        height: 250px;   
+        width: 35%;
     }
 
     div.p-relative>i{
-        left: 80%;
+        left: 60%;
     }
 
     section#get-started div.container-get-started{
@@ -541,6 +536,10 @@ footer{
     
     div.padding-container{
         padding: 2rem;
+    }
+
+    div.p-relative>i{
+        left: 70%;
     }
 
     section#get-started div.container-get-started{
