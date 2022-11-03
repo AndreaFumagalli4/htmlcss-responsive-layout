@@ -44,6 +44,7 @@
     padding: .75rem 3rem;
 }
 
+
 /* css header */
 
 header{
@@ -225,14 +226,14 @@ section#people div.testimonial{
     border-radius: 3.25rem;
 }
 
-div.testimonial figure.testimonial-image,
+figure.testimonial-image,
 div.testimonial div.testimonial-quote{
     width: 100%;
     text-align: center;
-    margin: 2rem 0 1rem;
+    margin: 1rem 0;
 }
 
-div.testimonial figure.testimonial-image{
+figure.testimonial-image{
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -309,14 +310,49 @@ div.article p{
     letter-spacing: .25rem;
 }
 
+/* css about us */
+
 section#about-us div.text{
-    background-color: yellow;
-    height: 100px;
+    width: 100%;
+}
+
+div.text h2{
+    color: #9792e4;
+    font-size: 2.5rem;
+}
+
+div.text h2,
+div.text p{
+    padding: 2rem 0 0 0;
 }
 
 section#about-us div.image-quote{
-    background-color: lime;
-    height: 100px;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+div.p-relative{
+    position: relative;
+    width: 250px;
+}
+
+div.p-relative>i{
+    color: #9792e4;
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
+
+div.image-quote>p{
+    color: #9792e4;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    padding: 0 0 1rem;
+}
+
+div.image-quote button.find-me-button{
+    padding: .75rem 1.5rem;
 }
 
 section#get-started{
@@ -373,7 +409,7 @@ footer{
         align-items: center;
     }
 
-    div.testimonial figure.testimonial-image{
+    figure.testimonial-image{
         width: 270px;
         height: 200px;
         margin: 2rem 1rem 1rem;
@@ -402,15 +438,25 @@ footer{
     }
 
     section#about-us div.container{
-        display: flex;
+        flex-wrap: nowrap;
     }
 
     section#about-us div.text{
         width: 70%;
+        padding:2rem;
     }
     
     section#about-us div.image-quote{
         width: 30%;
+    }
+
+    div.p-relative>figure.testimonial-image{
+        width: 250px;
+        height: 250px;   
+    }
+
+    div.p-relative>i{
+        left: 80%;
     }
 
     section#get-started div.container-get-started{
