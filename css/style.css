@@ -32,6 +32,10 @@ body{
     padding: 1.5rem;
 }
 
+.img-container{
+    width: 250px;
+}
+
 .button{
     border: none;
 }
@@ -242,6 +246,10 @@ figure.testimonial-image{
     width: 200px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+div.img-container>figure{
+    margin: 1rem auto;
 }
 
 figure.testimonial-image img{
@@ -469,10 +477,13 @@ div.footer-text p a{
         align-items: center;
     }
 
-    div.testiomonial figure.testimonial-image{
-        width: 270px;
+    div.img-container>figure{
+        margin: 1rem;
+    }
+
+    figure.testimonial-image{
+        width: 200px;
         height: 200px;
-        margin: 2rem 1rem 1rem;
     }
 
     div.testimonial div.testimonial-quote{
