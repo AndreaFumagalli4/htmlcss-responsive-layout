@@ -411,7 +411,20 @@ p.copyright a{
 
 footer{
     background-color: #333333;
+    color: white;
     text-align: center;
+}
+
+div.footer-text p:first-child{
+    padding: 1rem;
+}
+
+div.footer-text p{
+    padding: 3rem 1rem 1rem;
+}
+
+div.footer-text p a{
+    color: #9792e4;
 }
 
 
@@ -522,6 +535,10 @@ footer{
         width: 60%;
         margin: 0 auto;
     }
+
+    div.footer-text p{
+        padding: 3rem 1rem 1rem;
+    }
 }
 
 
@@ -606,6 +623,6 @@ footer{
     }
 
     footer div.footer-text{
-        width: 45%;
+        width: 35%;
     }
 }
