@@ -204,7 +204,7 @@ section#people h2{
     padding-bottom: 2rem;
 }
 
-section#people p.p-testimonial{
+p.p-testimonial{
     font-size: 1.3rem;
     line-height: 2rem;
     padding: 0 1rem 2rem;
@@ -213,19 +213,38 @@ section#people p.p-testimonial{
 section#people div.testimonial{
     background-color: #9792e4;
     margin: 1rem 0;
+    justify-content: center;
+    border-radius: 3.25rem;
 }
 
 div.testimonial figure.testimonial-image,
 div.testimonial div.testimonial-quote{
     width: 100%;
+    text-align: center;
+    margin: 2rem 0 1rem;
 }
 
 div.testimonial figure.testimonial-image{
-    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+figure.testimonial-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 div.testimonial div.testimonial-quote{
-    background-color: cyan;
+    color: white;
+    font-size: 1.35rem;
+}   
+
+div.testimonial-quote p.t-name{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
 }
 
 section#benefit{
@@ -297,16 +316,28 @@ footer{
         font-size: 4rem;
     }
 
-    .testimonial{
-        display: flex;
+    div.testimonial{
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
-    .testimonial-image{
-        width: 40%;
+    div.testimonial figure.testimonial-image{
+        width: 270px;
+        height: 200px;
+        margin: 2rem 1rem 1rem;
     }
 
-    .testimonial-quote{
-        width: 60%;
+    div.testimonial div.testimonial-quote{
+        text-align: start;
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    div.testimonial-quote p.t-name{
+        padding-left: 1rem;
+    }
+
+    div.testimonial-quote p.p-testimonial{
+        padding-bottom: 1rem;
     }
 
     .articles{
