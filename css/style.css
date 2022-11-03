@@ -12,6 +12,14 @@
 
 .flex-between{
     justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-between-center{
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -38,7 +46,7 @@ header div.flex>ul{
 header div.flex>ul>li{
     display: none;
     font-size: 1.2rem;
-    padding: 0 1rem;
+    padding: 0 .5rem;
 }
 
 header div.flex>ul>li:first-child{
@@ -97,8 +105,8 @@ div.content-card button.app-store-button{
     margin-bottom: 2rem;
 }
 
-div.image-card img{
-    width: 80%;
+figure.image-card img{
+    width: 100%;
 }
 
 div.card>i{
@@ -177,8 +185,6 @@ footer{
 @media screen and (min-width: 768px){
     
     div.cards{
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 -.5rem;
     }
@@ -186,10 +192,19 @@ footer{
     div.cards div.card{
         width: calc((100% / 3) - 1rem);
         margin: .5rem;
+        padding: 2rem 1.5rem 0;
     }
 
     div.cards div.card:first-child{
         width: calc((100% / 3) * 2 - 1rem);
+    }
+
+    figure.image-card{
+        text-align: left;
+    }
+
+    figure.image-card img{
+        width: 70%;
     }
 
     .testimonial{
@@ -257,8 +272,16 @@ footer{
     }
 
     div.big-card{
-        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
 
+    div.content-card{
+        margin-bottom: 4rem;
+    }
+
+    figure.image-card img{
+        width: 100%;
     }
 
     .plans{
