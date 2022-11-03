@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .flex{
     display: flex;
 }
@@ -66,7 +70,7 @@ header div.flex>ul>li:first-child{
     display: inline-block;
 }
 
-li>button.get-started-button{
+button.get-started-button{
     font-size: 1rem;
     background-color: white;
     border-radius: 1.5rem;
@@ -201,7 +205,7 @@ section#people{
     text-align: center;
 }
 
-section#people p#top-subtitle{
+p.top-subtitle{
     text-transform: uppercase;
     font-size: 1.4rem;
     padding: 2rem;
@@ -355,10 +359,53 @@ div.image-quote button.find-me-button{
     padding: .75rem 1.5rem;
 }
 
+/* css get started */
+
 section#get-started{
     background-color: #9792e4;
+    color: white;
     text-align: center;
 }
+
+div.container-get-started p.top-subtitle{
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+div.container-get-started p#simple{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+div.container-get-started h3{
+    color: #fdc15f;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+div.container-get-started p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding: 0 1rem 2rem;
+}
+
+button.get-started-button-buttom{
+    color: #9792e4;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    letter-spacing: .25rem;
+}
+
+div.container-get-started p.copyright{
+    font-size: .9rem;
+    padding: 2rem 1rem 1rem;
+}
+
+p.copyright a{
+    color: white;
+}
+
 
 /* css footer */
 
@@ -455,8 +502,20 @@ footer{
     }
 
     section#get-started div.container-get-started{
-        width: 70%;
+        width: 75%;
         margin: 0 auto;
+    }
+
+    div.container-get-started p#simple{
+        font-size: 2.5rem;
+    }
+    
+    div.container-get-started h3{
+        font-size: 5rem;
+    }
+    button.get-started-button-buttom{
+        border-radius: 2.5rem;
+        padding: 2rem 4rem;
     }
 
     footer div.footer-text{
@@ -543,7 +602,7 @@ footer{
     }
 
     section#get-started div.container-get-started{
-        width: 50%;
+        width: 40%;
     }
 
     footer div.footer-text{
